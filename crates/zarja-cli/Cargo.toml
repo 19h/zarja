@@ -1,0 +1,30 @@
+[package]
+name = "zarja"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+description = "Extract Protocol Buffer definitions from compiled binaries"
+readme = "../../README.md"
+homepage = "https://github.com/19h/zarja"
+documentation = "https://docs.rs/zarja"
+
+[[bin]]
+name = "zarja"
+path = "src/main.rs"
+
+[dependencies]
+zarja-core = { path = "../zarja-core", version = "0.1.0" }
+clap = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+walkdir = { workspace = true }
+blake3 = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }

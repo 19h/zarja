@@ -1,0 +1,16 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Cargo.lock for library (keep for binary)
+# We keep it since we have a binary
